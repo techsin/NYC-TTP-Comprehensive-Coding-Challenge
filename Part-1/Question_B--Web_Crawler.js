@@ -8,6 +8,7 @@ var hash = {};
 
 
 function storeIntoNestedHash(word, node) {
+  if (word.length == 0) return;
   let char = word[0];
   node = node || hash;
   node[char] = node[char] || {};
